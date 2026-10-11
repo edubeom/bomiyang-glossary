@@ -16595,7 +16595,13 @@
         "https://en.wiktionary.org/wiki/job"
       ],
       "created_at": "2026-04-23T01:13:29Z",
-      "updated_at": "2026-04-23T01:13:29Z"
+      "updated_at": "2026-04-23T01:13:29Z",
+      "senses": {
+        "general": [
+          "직업",
+          "적재작업"
+        ]
+      }
     },
     {
       "id": "journal",
