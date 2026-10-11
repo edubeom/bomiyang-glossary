@@ -16495,7 +16495,7 @@
       "id": "it",
       "lang": {
         "en": "it",
-        "ko": "대상"
+        "ko": "그것"
       },
       "canonical_pos": "noun",
       "domain": [
@@ -16503,11 +16503,11 @@
       ],
       "status": "active",
       "description_i18n": {
-        "ko": "Legacy physical-name token used by the current BOMTS AI schema: it",
-        "en": "it"
+        "ko": "그것 (영어 대명사). 'why it matters'(중요한 이유)처럼 문구형 이름 안에서만 쓴다. item·target·IT(정보기술)의 줄임말이 아니다.",
+        "en": "The English pronoun 'it'; used only inside phrase-style names such as why_it_matters. Not an abbreviation of item, target or IT (information technology)."
       },
       "variants": [],
-      "updated_at": "2026-10-10T11:26:51Z",
+      "updated_at": "2026-10-11T02:29:24Z",
       "created_at": "2026-10-10T11:26:51Z"
     },
     {
@@ -33204,8 +33204,8 @@
       ],
       "status": "active",
       "description_i18n": {
-        "en": "An objective or goal to be achieved, particularly in trading or investment.",
-        "ko": "목표"
+        "ko": "이루려는 목표, 또는 작업·처리가 향하는 대상",
+        "en": "An objective or goal to be achieved; also the thing an operation or job acts on (e.g. a load target)."
       },
       "variants": [
         {
@@ -33237,7 +33237,13 @@
         "https://en.wiktionary.org/wiki/target"
       ],
       "created_at": "2026-04-19T03:22:27Z",
-      "updated_at": "2026-04-19T03:22:27Z"
+      "updated_at": "2026-10-11T02:29:24Z",
+      "senses": {
+        "general": [
+          "목표",
+          "대상"
+        ]
+      }
     },
     {
       "id": "task",

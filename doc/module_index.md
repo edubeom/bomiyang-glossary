@@ -118,3 +118,5 @@
   - PROJECTION_VARIANT_TYPES: variant_map에 포함할 타입 목록
     (abbreviation, alias, plural, misspelling + 굴절형 + 파생형 전체 — §4.4 확장)
   - PROJECTION_EXCLUDE_TYPES: variant_map 제외 타입 목록
+- Determinism: 같은 words/compounds 입력이면 terms.json 내용(generated_at·checksum 제외)이 실행마다 같다. 한 항목의 여러 domain 은 선언 순서대로 펼친다 (`build_terms_json._unroll_domains`).
+- Tests: `test/test_projection.py` (domain 순서 유지, PYTHONHASHSEED 무관)

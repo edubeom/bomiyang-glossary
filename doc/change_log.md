@@ -1,5 +1,24 @@
 # Glossary Change Log
 
+## [2026-10-11 11:40:00]
+### Fixed
+- `terms.json` 이 실행할 때마다 달라지던 문제: `build_terms_json._unroll_domains` 가 `set()` 으로 중복을 지워
+  여러 영역(domain)을 가진 항목의 펼침 순서가 `PYTHONHASHSEED` 에 따라 바뀌었다. 선언 순서를 지키는 중복 제거로 바꿈.
+  (영역마다 따로 등록되므로 담긴 항목은 같고, 순서만 실행마다 같아진다)
+- 사전 데이터: `it` 의 한글명 '대상' → '그것'(영어 대명사)으로 바로잡고, '대상'은 `target` 의 general 뜻으로 추가 (R2: 한글명 하나 → 영문 하나).
+  - 근거: `it` 은 2026-10-10 BOMTS AI 스키마 용어 22개(d16f5e7)와 함께 등록됐고, 같은 묶음의 `why`·`matter`(약어 `matters`)와 함께
+    `why_it_matters`(중요한 이유) 같은 문구형 이름에서 나온 대명사로 보인다. bomts-main 전수 조사(bomts-main c7345c5:
+    DB·코드·파일명·전체 이력의 `it` 식별자 0건)와 bomts-ai·bomts-infra·bomts-main-history 현재 트리 검색에서도 `it` 를
+    target·item·IT 의 줄임말로 쓰는 곳은 없었다.
+  - `target`: senses `general: [목표, 대상]` (lang.ko 대표 뜻 '목표' 유지).
+- File: generate_glossary.py
+- File: test/test_projection.py
+- File: dictionary/words.json (GlossaryWriter 경유)
+
+### Verification
+- `python generate_glossary.py validate` FATAL 0, `generate` 후 PYTHONHASHSEED 1·2·3 에서 terms.json·terms_legacy.json·GLOSSARY.md 동일 (generated_at·checksum 제외).
+- `pytest test` 14 passed (새 시험 2개는 수정 전 코드에서 실패 확인).
+
 ## [2026-08-06 14:45:00]
 ### Added
 - 사용자 승인 범위에 따라 기존 운영 식별자 `state_machine`, `wake_up`, `notify_web_banner_alert`에서 누락됐던 root `machine`, `wake`, `up`, `banner`를 등록.

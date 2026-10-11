@@ -527,7 +527,8 @@ def build_terms_json(words, compounds) -> tuple:
         ds = item.get("domain", ["general"])
         if isinstance(ds, str):
             return [ds]
-        return list(set(ds)) if isinstance(ds, list) else ["general"]
+        # Order-preserving dedupe: set() order depends on PYTHONHASHSEED and made terms.json differ per run.
+        return list(dict.fromkeys(ds)) if isinstance(ds, list) else ["general"]
 
     for w in words:
         wid = w["id"]
