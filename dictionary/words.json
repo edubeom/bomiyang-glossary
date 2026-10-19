@@ -1316,7 +1316,8 @@
       },
       "canonical_pos": "noun",
       "domain": [
-        "general"
+        "general",
+        "data"
       ],
       "status": "active",
       "description_i18n": {
@@ -1347,7 +1348,15 @@
         "https://en.wiktionary.org/wiki/amt"
       ],
       "created_at": "2026-04-23T01:13:29Z",
-      "updated_at": "2026-04-23T01:13:29Z"
+      "updated_at": "2026-04-23T01:13:29Z",
+      "senses": {
+        "general": [
+          "양"
+        ],
+        "data": [
+          "금액"
+        ]
+      }
     },
     {
       "id": "and",
@@ -1577,7 +1586,16 @@
         "https://en.wiktionary.org/wiki/apply"
       ],
       "created_at": "2026-04-19T03:22:27Z",
-      "updated_at": "2026-04-19T03:22:27Z"
+      "updated_at": "2026-04-19T03:22:27Z",
+      "senses": {
+        "system": [
+          "적용"
+        ],
+        "general": [
+          "적용",
+          "신청"
+        ]
+      }
     },
     {
       "id": "approval",
@@ -4505,6 +4523,30 @@
       "variants": [],
       "updated_at": "2026-04-21T01:01:24Z",
       "created_at": "2026-04-21T01:01:24Z"
+    },
+    {
+      "id": "career",
+      "lang": {
+        "en": "career",
+        "ko": "이력"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "general"
+      ],
+      "status": "active",
+      "senses": {
+        "general": [
+          "이력"
+        ]
+      },
+      "description_i18n": {
+        "ko": "사람이 일·학업·활동으로 쌓아 온 경력과 이력",
+        "en": "career"
+      },
+      "variants": [],
+      "updated_at": "2026-10-19T10:53:47Z",
+      "created_at": "2026-10-19T10:53:47Z"
     },
     {
       "id": "cascading",
@@ -10331,6 +10373,30 @@
       "updated_at": "2026-04-19T03:22:27Z"
     },
     {
+      "id": "email",
+      "lang": {
+        "en": "email",
+        "ko": "이메일"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "general"
+      ],
+      "status": "active",
+      "senses": {
+        "general": [
+          "이메일"
+        ]
+      },
+      "description_i18n": {
+        "ko": "전자우편 (이메일 주소·메시지)",
+        "en": "email"
+      },
+      "variants": [],
+      "updated_at": "2026-10-19T10:53:51Z",
+      "created_at": "2026-10-19T10:53:51Z"
+    },
+    {
       "id": "emergency",
       "lang": {
         "en": "emergency",
@@ -11955,6 +12021,30 @@
         ],
         "noted_at": "2026-10-05T02:14:38Z"
       }
+    },
+    {
+      "id": "expense",
+      "lang": {
+        "en": "expense",
+        "ko": "경비"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "general"
+      ],
+      "status": "active",
+      "senses": {
+        "general": [
+          "경비"
+        ]
+      },
+      "description_i18n": {
+        "ko": "일을 하며 드는 비용·경비",
+        "en": "expense"
+      },
+      "variants": [],
+      "updated_at": "2026-10-19T10:53:53Z",
+      "created_at": "2026-10-19T10:53:53Z"
     },
     {
       "id": "expire",
@@ -17337,6 +17427,30 @@
       ]
     },
     {
+      "id": "lecture",
+      "lang": {
+        "en": "lecture",
+        "ko": "강의"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "general"
+      ],
+      "status": "active",
+      "senses": {
+        "general": [
+          "강의"
+        ]
+      },
+      "description_i18n": {
+        "ko": "청중이나 학습자에게 지식을 가르치는 강의",
+        "en": "lecture"
+      },
+      "variants": [],
+      "updated_at": "2026-10-19T10:53:48Z",
+      "created_at": "2026-10-19T10:53:48Z"
+    },
+    {
       "id": "leftover",
       "lang": {
         "en": "leftover",
@@ -21908,6 +22022,30 @@
       "updated_at": "2026-04-18T09:02:35Z"
     },
     {
+      "id": "organization",
+      "lang": {
+        "en": "organization",
+        "ko": "기관"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "general"
+      ],
+      "status": "active",
+      "senses": {
+        "general": [
+          "기관"
+        ]
+      },
+      "description_i18n": {
+        "ko": "회사·기관·단체처럼 목적을 위해 구성된 조직",
+        "en": "organization"
+      },
+      "variants": [],
+      "updated_at": "2026-10-19T10:53:47Z",
+      "created_at": "2026-10-19T10:53:47Z"
+    },
+    {
       "id": "original",
       "lang": {
         "en": "original",
@@ -22769,6 +22907,30 @@
       "updated_at": "2026-04-21T00:39:08Z"
     },
     {
+      "id": "payment",
+      "lang": {
+        "en": "payment",
+        "ko": "지급"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "general"
+      ],
+      "status": "active",
+      "senses": {
+        "general": [
+          "지급"
+        ]
+      },
+      "description_i18n": {
+        "ko": "돈을 치르거나 받는 일, 지급(입금) 한 건",
+        "en": "payment"
+      },
+      "variants": [],
+      "updated_at": "2026-10-19T10:53:53Z",
+      "created_at": "2026-10-19T10:53:53Z"
+    },
+    {
       "id": "pct",
       "lang": {
         "en": "pct",
@@ -23163,6 +23325,30 @@
         ],
         "noted_at": "2026-10-05T02:14:38Z"
       }
+    },
+    {
+      "id": "phone",
+      "lang": {
+        "en": "phone",
+        "ko": "전화"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "general"
+      ],
+      "status": "active",
+      "senses": {
+        "general": [
+          "전화"
+        ]
+      },
+      "description_i18n": {
+        "ko": "전화 (전화기·전화번호)",
+        "en": "phone"
+      },
+      "variants": [],
+      "updated_at": "2026-10-19T10:53:52Z",
+      "created_at": "2026-10-19T10:53:52Z"
     },
     {
       "id": "physical and medical rehabilitation",
@@ -29397,6 +29583,30 @@
       ],
       "created_at": "2026-04-19T03:22:27Z",
       "updated_at": "2026-04-23T01:37:06Z"
+    },
+    {
+      "id": "sensitive",
+      "lang": {
+        "en": "sensitive",
+        "ko": "민감"
+      },
+      "canonical_pos": "adjective",
+      "domain": [
+        "general"
+      ],
+      "status": "active",
+      "senses": {
+        "general": [
+          "민감"
+        ]
+      },
+      "description_i18n": {
+        "ko": "다루는 데 특별한 주의가 필요한 (민감정보 등)",
+        "en": "sensitive"
+      },
+      "variants": [],
+      "updated_at": "2026-10-19T10:53:52Z",
+      "created_at": "2026-10-19T10:53:52Z"
     },
     {
       "id": "separated",

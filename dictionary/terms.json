@@ -2,7 +2,7 @@
   "_WARNING": "이 파일은 자동 생성됩니다. 수동 편집 금지. words.json과 compounds.json을 편집하세요.",
   "version": "3.0.0",
   "generated": true,
-  "generated_at": "2026-10-19T10:27:16Z",
+  "generated_at": "2026-10-19T10:53:55Z",
   "terms": [
     {
       "id": "aborts",
@@ -1389,6 +1389,37 @@
       "term_type": "variant",
       "variant_type": "abbreviation",
       "domain": "general",
+      "lang": {
+        "en": "amount",
+        "ko": "양",
+        "ja": "量",
+        "zh_hans": "量"
+      }
+    },
+    {
+      "id": "amount",
+      "source": "word",
+      "root": "amount",
+      "term_type": "base",
+      "domain": "data",
+      "lang": {
+        "en": "amount",
+        "ko": "양",
+        "ja": "量",
+        "zh_hans": "量"
+      },
+      "description_i18n": {
+        "ko": "특정 양이나 수량",
+        "en": "A quantity or number of something"
+      }
+    },
+    {
+      "id": "amt",
+      "source": "word",
+      "root": "amount",
+      "term_type": "variant",
+      "variant_type": "abbreviation",
+      "domain": "data",
       "lang": {
         "en": "amount",
         "ko": "양",
@@ -4764,6 +4795,21 @@
       "description_i18n": {
         "en": "to take possession of something or record it by seizing or obtaining it",
         "ko": "붙잡거나 획득하여 자기 것으로 만들거나 기록함"
+      }
+    },
+    {
+      "id": "career",
+      "source": "word",
+      "root": "career",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "career",
+        "ko": "이력"
+      },
+      "description_i18n": {
+        "ko": "사람이 일·학업·활동으로 쌓아 온 경력과 이력",
+        "en": "career"
       }
     },
     {
@@ -11148,6 +11194,21 @@
       }
     },
     {
+      "id": "email",
+      "source": "word",
+      "root": "email",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "email",
+        "ko": "이메일"
+      },
+      "description_i18n": {
+        "ko": "전자우편 (이메일 주소·메시지)",
+        "en": "email"
+      }
+    },
+    {
       "id": "emergency",
       "source": "word",
       "root": "emergency",
@@ -12791,6 +12852,21 @@
         "ko": "청산",
         "ja": "出口",
         "zh_hans": "出口"
+      }
+    },
+    {
+      "id": "expense",
+      "source": "word",
+      "root": "expense",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "expense",
+        "ko": "경비"
+      },
+      "description_i18n": {
+        "ko": "일을 하며 드는 비용·경비",
+        "en": "expense"
       }
     },
     {
@@ -18212,6 +18288,21 @@
       }
     },
     {
+      "id": "lecture",
+      "source": "word",
+      "root": "lecture",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "lecture",
+        "ko": "강의"
+      },
+      "description_i18n": {
+        "ko": "청중이나 학습자에게 지식을 가르치는 강의",
+        "en": "lecture"
+      }
+    },
+    {
       "id": "leftover",
       "source": "word",
       "root": "leftover",
@@ -23133,6 +23224,21 @@
       }
     },
     {
+      "id": "organization",
+      "source": "word",
+      "root": "organization",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "organization",
+        "ko": "기관"
+      },
+      "description_i18n": {
+        "ko": "회사·기관·단체처럼 목적을 위해 구성된 조직",
+        "en": "organization"
+      }
+    },
+    {
       "id": "original",
       "source": "word",
       "root": "original",
@@ -23962,6 +24068,21 @@
       }
     },
     {
+      "id": "payment",
+      "source": "word",
+      "root": "payment",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "payment",
+        "ko": "지급"
+      },
+      "description_i18n": {
+        "ko": "돈을 치르거나 받는 일, 지급(입금) 한 건",
+        "en": "payment"
+      }
+    },
+    {
       "id": "pct",
       "source": "word",
       "root": "pct",
@@ -24321,6 +24442,21 @@
         "ko": "postgresql",
         "ja": "ページ",
         "zh_hans": "pg"
+      }
+    },
+    {
+      "id": "phone",
+      "source": "word",
+      "root": "phone",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "phone",
+        "ko": "전화"
+      },
+      "description_i18n": {
+        "ko": "전화 (전화기·전화번호)",
+        "en": "phone"
       }
     },
     {
@@ -31072,6 +31208,21 @@
       "lang": {
         "en": "send",
         "ko": "보내기"
+      }
+    },
+    {
+      "id": "sensitive",
+      "source": "word",
+      "root": "sensitive",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "sensitive",
+        "ko": "민감"
+      },
+      "description_i18n": {
+        "ko": "다루는 데 특별한 주의가 필요한 (민감정보 등)",
+        "en": "sensitive"
       }
     },
     {
@@ -45289,5 +45440,5 @@
       }
     }
   ],
-  "checksum": "sha256:2ac3467671caf831397e010ffc084ff365eac7267432fcc6e4c9543a19c6f4a5"
+  "checksum": "sha256:518a69cfeaa0c108ed9a1b5388b938dec9e9def0ea7dd9f5fab848a9e9093aa3"
 }
