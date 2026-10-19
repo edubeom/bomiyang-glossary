@@ -120,3 +120,10 @@
   - PROJECTION_EXCLUDE_TYPES: variant_map 제외 타입 목록
 - Determinism: 같은 words/compounds 입력이면 terms.json 내용(generated_at·checksum 제외)이 실행마다 같다. 한 항목의 여러 domain 은 선언 순서대로 펼친다 (`build_terms_json._unroll_domains`).
 - Tests: `test/test_projection.py` (domain 순서 유지, PYTHONHASHSEED 무관)
+
+## core/areas.py (Areas)
+- Path: core/areas.py
+- Responsibility: 용어 영역(areas) 읽기·계산 -- 영역 목록, 영역별 뜻(`effective_senses`), 뜻 표시·조회(`display_meaning`, `meaning`), 한글명 색인(`ko_index`), 원칙 진단(`diagnose`). 파일을 쓰지 않는다 (쓰기는 `GlossaryWriter.add_sense` 등).
+- Legacy reading: `senses` 가 없는 항목은 `lang.ko` 를 첫 domain 영역의 뜻으로 읽고, domain 에 `general` 이 있으면 general 뜻으로도 읽는다.
+- Rule: `doc/glossary_area_rule.md`
+- Tests: `test/test_areas.py`

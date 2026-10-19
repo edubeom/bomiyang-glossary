@@ -18,6 +18,12 @@ def test_effective_senses_legacy_reads_lang_ko_as_first_domain():
     assert ar.effective_senses({"id": "no", "senses": {"general": ["금지"], "data": ["번호"]}}) == {"general": ["금지"], "data": ["번호"]}
 
 
+def test_effective_senses_legacy_also_reads_lang_ko_as_general_when_general_in_domain():
+    e = {"id": "apply", "domain": ["system", "general"], "lang": {"ko": "적용"}}
+    assert ar.effective_senses(e) == {"system": ["적용"], "general": ["적용"]}
+    assert ar.meaning(e, None) == {"area": "general", "names": ["적용"]}
+
+
 def test_display_meaning_format():
     e = {"id": "subject", "senses": {"data": ["번호"], "general": ["주제", "과목", "주체"]}}
     assert ar.display_meaning(e, ["general", "trading", "data"]) == "주제/과목/주체, 번호"
@@ -47,7 +53,8 @@ def test_diagnose_r2_general_unknown():
 def gw(tmp_path, monkeypatch):
     (tmp_path / "words.json").write_text(json.dumps({"words": [
         {"id": "value", "domain": ["market"], "lang": {"en": "value", "ko": "거래대금"}},
-        {"id": "no", "domain": ["system"], "lang": {"en": "no", "ko": "금지"}}]}, ensure_ascii=False), encoding="utf-8")
+        {"id": "no", "domain": ["system"], "lang": {"en": "no", "ko": "금지"}},
+        {"id": "apply", "domain": ["system", "general"], "lang": {"en": "apply", "ko": "적용"}}]}, ensure_ascii=False), encoding="utf-8")
     (tmp_path / "compounds.json").write_text('{"compounds": []}', encoding="utf-8")
     (tmp_path / "areas.json").write_text(json.dumps({"areas": AREAS}, ensure_ascii=False), encoding="utf-8")
     for name in ("WORDS_PATH", "COMPOUNDS_PATH", "AREAS_PATH"):
@@ -64,6 +71,14 @@ def test_add_sense_keeps_legacy_meaning_and_lang_ko(gw):
     assert e["lang"]["ko"] == "거래대금" and e["domain"] == ["market", "general"]  # 대표 뜻은 그대로
     with pytest.raises(ValueError):
         w.add_sense("value", "nowhere", ["x"])                                    # 목록에 없는 영역 거부
+
+
+def test_add_sense_general_keeps_legacy_general_meaning(gw):
+    w, d = gw
+    w.add_sense("apply", "general", ["신청"])
+    e = w.get_word("apply")
+    assert e["senses"] == {"system": ["적용"], "general": ["적용", "신청"]}      # general 의 기존 뜻 '적용'을 잃지 않는다
+    assert e["lang"]["ko"] == "적용" and e["domain"] == ["system", "general"]
 
 
 def test_area_abbreviation_need_modify_and_area_list_saved(gw):

@@ -38,6 +38,8 @@
 - `senses`: 영역 → 한글명 목록. 한 영역에 이름이 여럿이면 목록에 여러 개.
 - 출력: 영역 사이는 `, `, 한 영역 안의 여러 이름은 `/` -- 예 `금지, 번호`, `주제/과목/주체`.
 - `senses` 가 없는 기존 단어는 "`lang.ko` = 첫 번째 `domain` 영역의 뜻"으로 **읽을 때만** 해석한다 (파일은 그대로).
+  `domain` 에 `general` 이 있으면 `lang.ko` 는 general 뜻이기도 하다 (예: `apply` domain `[system, general]` → system·general 모두 '적용').
+  그래서 `add_sense('apply', 'general', ['신청'])` 은 general 을 `[적용, 신청]` 으로 만든다 (기존 뜻을 잃지 않는다).
 - `area_abbreviations`: 영역 → 약어. 영역 안에서만 유효하므로 전역 약어와 철자가 겹쳐도 된다
   (data 영역 `timestamp`→`at` 과 trading 의 `active_trade`→`at` 공존).
 - `lang.ko` 는 대표 뜻으로 유지한다 (기존 도구 호환).

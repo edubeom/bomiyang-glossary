@@ -2,7 +2,7 @@
   "_WARNING": "이 파일은 자동 생성됩니다. 수동 편집 금지. words.json과 compounds.json을 편집하세요.",
   "version": "3.0.0",
   "generated": true,
-  "generated_at": "2026-10-11T02:30:40Z",
+  "generated_at": "2026-10-19T10:27:16Z",
   "terms": [
     {
       "id": "aborts",
@@ -25066,18 +25066,30 @@
       }
     },
     {
-      "id": "presets",
+      "id": "preset",
       "source": "word",
-      "root": "presets",
+      "root": "preset",
       "term_type": "base",
       "domain": "general",
       "lang": {
-        "en": "presets",
-        "ko": "사전 설정"
+        "en": "preset",
+        "ko": "프리셋"
       },
       "description_i18n": {
-        "en": "A pre-defined configuration or set of parameters for a system or process.",
-        "ko": "사전 설정"
+        "ko": "미리 정해 두어 한 번에 고를 수 있는 설정·선택 묶음",
+        "en": "A predefined bundle of settings or choices that can be selected at once."
+      }
+    },
+    {
+      "id": "presets",
+      "source": "word",
+      "root": "preset",
+      "term_type": "variant",
+      "variant_type": "plural",
+      "domain": "general",
+      "lang": {
+        "en": "preset",
+        "ko": "프리셋"
       }
     },
     {
@@ -45277,5 +45289,5 @@
       }
     }
   ],
-  "checksum": "sha256:b447d4f5aab56e3b9f7282a39ca9ca7f27424d4d0ae59886595c4b29b39a8564"
+  "checksum": "sha256:2ac3467671caf831397e010ffc084ff365eac7267432fcc6e4c9543a19c6f4a5"
 }

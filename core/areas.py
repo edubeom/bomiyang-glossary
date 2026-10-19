@@ -32,13 +32,19 @@ def _domains(entry: Dict[str, Any]) -> List[str]:
 
 
 def effective_senses(entry: Dict[str, Any]) -> Dict[str, List[str]]:
-    """영역 -> 한글명 목록. senses 가 없으면 기존 lang.ko 를 첫 domain 영역의 뜻으로 읽는다 (파일은 그대로)."""
+    """영역 -> 한글명 목록. senses 가 없으면 기존 lang.ko 를 첫 domain 영역의 뜻으로 읽고,
+    domain 에 general 이 있으면 general 뜻으로도 읽는다 (파일은 그대로)."""
     s = entry.get("senses")
     if isinstance(s, dict) and s:
         return {k: [n for n in (v if isinstance(v, list) else [v]) if n] for k, v in s.items()}
     ko = (entry.get("lang") or {}).get("ko") or entry.get("ko") or ""
+    if not ko:
+        return {}
     doms = _domains(entry)
-    return {(doms[0] if doms else GENERAL): [ko]} if ko else {}
+    out = {(doms[0] if doms else GENERAL): [ko]}
+    if GENERAL in doms:
+        out.setdefault(GENERAL, [ko])
+    return out
 
 
 def display_meaning(entry: Dict[str, Any], order: Optional[List[str]] = None) -> str:

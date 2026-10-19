@@ -23898,10 +23898,10 @@
       "updated_at": "2026-04-19T03:22:27Z"
     },
     {
-      "id": "presets",
+      "id": "preset",
       "lang": {
-        "en": "presets",
-        "ko": "사전 설정"
+        "en": "preset",
+        "ko": "프리셋"
       },
       "canonical_pos": "noun",
       "domain": [
@@ -23909,15 +23909,28 @@
       ],
       "status": "active",
       "description_i18n": {
-        "en": "A pre-defined configuration or set of parameters for a system or process.",
-        "ko": "사전 설정"
+        "ko": "미리 정해 두어 한 번에 고를 수 있는 설정·선택 묶음",
+        "en": "A predefined bundle of settings or choices that can be selected at once."
       },
-      "variants": [],
-      "source_urls": [
-        "https://en.wiktionary.org/wiki/presets"
+      "variants": [
+        {
+          "types": [
+            "plural"
+          ],
+          "value": "presets"
+        }
       ],
-      "created_at": "2026-04-19T03:22:27Z",
-      "updated_at": "2026-04-19T03:22:27Z"
+      "source_urls": [
+        "https://en.wiktionary.org/wiki/preset"
+      ],
+      "senses": {
+        "general": [
+          "프리셋",
+          "사전 설정"
+        ]
+      },
+      "updated_at": "2026-10-19T10:09:56Z",
+      "created_at": "2026-10-19T10:09:56Z"
     },
     {
       "id": "prev",

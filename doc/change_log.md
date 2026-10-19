@@ -1,5 +1,27 @@
 # Glossary Change Log
 
+## [2026-10-19 19:15:00]
+### Fixed
+- `core/areas.py effective_senses()`: `senses` 가 없는 항목의 `lang.ko` 를 첫 domain 에만 넣어서, domain 이 `[system, general]` 인
+  `apply` 에 `add_sense('apply', 'general', ['신청'])` 을 하면 general 의 기존 뜻 '적용'이 사라졌다.
+  domain 에 general 이 있으면 general 에도 `lang.ko` 를 넣는다.
+  - 영향: `build/index/senses.json`·`ko_index.json` 에서 general 이 첫 domain 이 아닌 기존 항목 6개(`apply, collect, level, result, step, cfg`)에
+    general 뜻(= lang.ko)이 추가됨. 영역을 선언한 감사(`GlossaryAuditor(areas=...)`)에서 이 6개의 `meaning()` 은 이름은 같고
+    area 만 system → general 로 잡힐 수 있다 (system 을 선언한 사용처는 그대로 system). diagnose 의 "general 뜻 없는 기존 항목" 497 → 491.
+    terms.json·terms_legacy.json·GLOSSARY.md·word_min/compound_min/variant_map/area_map 은 변화 없음 (영역 미선언 사용처 결과 동일).
+  - 이미 `senses` 가 있는 항목 중 예전 동작으로 general 뜻을 잃은 것은 없다 (general 이 domain 에 있던 9개 모두 add_sense 가 general 을 새로 붙인 경우 -- git 이력 확인).
+- 사전 데이터 (V-301): 복수형 `presets` 가 원형으로 등록돼 있던 것을 단수 `preset`(noun, '프리셋', senses general `[프리셋, 사전 설정]`)
+  원형으로 바꾸고 `presets` 는 그 plural 변형으로 둠.
+- File: core/areas.py
+- File: test/test_areas.py
+- File: dictionary/words.json (GlossaryWriter 경유)
+- File: doc/glossary_area_rule.md, doc/module_index.md
+
+### Verification
+- 새 시험 2개(`test_effective_senses_legacy_also_reads_lang_ko_as_general_when_general_in_domain`,
+  `test_add_sense_general_keeps_legacy_general_meaning`)는 수정 전 코드에서 실패 확인, 수정 후 `pytest test` 16 passed.
+- `python generate_glossary.py validate` FATAL 0, `generate` 정상, `check-id preset_presets` 모든 단어 등록됨.
+
 ## [2026-10-11 11:40:00]
 ### Fixed
 - `terms.json` 이 실행할 때마다 달라지던 문제: `build_terms_json._unroll_domains` 가 `set()` 으로 중복을 지워
