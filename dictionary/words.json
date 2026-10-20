@@ -14765,7 +14765,13 @@
         "https://en.wiktionary.org/wiki/handle"
       ],
       "created_at": "2026-04-19T03:22:27Z",
-      "updated_at": "2026-04-19T03:22:27Z"
+      "updated_at": "2026-04-19T03:22:27Z",
+      "senses": {
+        "general": [
+          "처리",
+          "핸들"
+        ]
+      }
     },
     {
       "id": "handler",
@@ -22708,6 +22714,30 @@
         ],
         "noted_at": "2026-10-05T02:14:38Z"
       }
+    },
+    {
+      "id": "passkey",
+      "lang": {
+        "en": "passkey",
+        "ko": "패스키"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "system"
+      ],
+      "status": "active",
+      "description_i18n": {
+        "en": "A FIDO2/WebAuthn credential used to sign in without a password; the server keeps only its public key.",
+        "ko": "패스키"
+      },
+      "variants": [
+        {
+          "type": "plural",
+          "value": "passkeys"
+        }
+      ],
+      "updated_at": "2026-10-20T11:39:43Z",
+      "created_at": "2026-10-20T11:39:43Z"
     },
     {
       "id": "passthrough",

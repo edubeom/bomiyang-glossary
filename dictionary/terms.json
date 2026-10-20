@@ -2,7 +2,7 @@
   "_WARNING": "이 파일은 자동 생성됩니다. 수동 편집 금지. words.json과 compounds.json을 편집하세요.",
   "version": "3.0.0",
   "generated": true,
-  "generated_at": "2026-10-20T04:48:53Z",
+  "generated_at": "2026-10-20T11:45:36Z",
   "terms": [
     {
       "id": "aborts",
@@ -23940,6 +23940,33 @@
       }
     },
     {
+      "id": "passkey",
+      "source": "word",
+      "root": "passkey",
+      "term_type": "base",
+      "domain": "system",
+      "lang": {
+        "en": "passkey",
+        "ko": "패스키"
+      },
+      "description_i18n": {
+        "en": "A FIDO2/WebAuthn credential used to sign in without a password; the server keeps only its public key.",
+        "ko": "패스키"
+      }
+    },
+    {
+      "id": "passkeys",
+      "source": "word",
+      "root": "passkey",
+      "term_type": "variant",
+      "variant_type": "plural",
+      "domain": "system",
+      "lang": {
+        "en": "passkey",
+        "ko": "패스키"
+      }
+    },
+    {
       "id": "passthrough",
       "source": "word",
       "root": "passthrough",
@@ -45553,5 +45580,5 @@
       }
     }
   ],
-  "checksum": "sha256:6a0b1426f2304cc5d14e775bf42ef08a6d9b0768acfa42e45ce0d419ac7b736a"
+  "checksum": "sha256:3335b3e15fce0fbed21cfc4538e705f4ff5f4c88059b54fbb9f9bb87708c985a"
 }
