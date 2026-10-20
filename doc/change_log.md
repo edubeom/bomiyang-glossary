@@ -1,5 +1,21 @@
 # Glossary Change Log
 
+## [2026-10-20 21:40:00]
+### Added
+- GitHub Actions `glossary` (`.github/workflows/glossary.yml`): 모든 push · PR 에서
+  - `validate` 작업: `python generate_glossary.py validate` (FATAL 0) + `generate` 뒤 생성물이 커밋과 같은지
+    (`.github/scripts/check_generated.py` -- 생성 시각 · 그 시각이 든 checksum 줄만 뺀다. 사전을 고치고 generate 를 하지 않았으면 실패)
+  - `test` 작업: `pytest test` (저장소를 `glossary/` 로 받아 패키지로 불러온다)
+- main 보호 규칙 (저장소 ruleset `main -- validated only`, 소유자 지시 2026-10-20): 강제 push · 삭제 막기, 상태 검사 `validate`(GitHub Actions) 필수,
+  예외(bypass) 없음. 그래서 **main 에는 다른 가지에서 `validate` 를 통과한 커밋만** 들어간다 -- 먼저 다른 가지(예: `dev-process/incoming/...`)에
+  올리고 검사가 통과하면 같은 커밋을 main 으로 push 한다. dev-process-framework 의 사전 명령이 이 순서로 올린다.
+- File: .github/workflows/glossary.yml, .github/scripts/check_generated.py
+- File: doc/GIT_SUBMODULE_GUIDE.md, README.md, README.ko.md (올리는 순서)
+
+### Verification
+- 깨끗한 가상 환경(표준 라이브러리만)에서 validate FATAL 0 · generate 뒤 check_generated OK (3개 파일이 생성 시각만 다름),
+  GLOSSARY.md 한 줄을 바꾸면 실패. `pytest test` 16 passed (`glossary/` 로 받았을 때).
+
 ## [2026-10-19 19:15:00]
 ### Fixed
 - `core/areas.py effective_senses()`: `senses` 가 없는 항목의 `lang.ko` 를 첫 domain 에만 넣어서, domain 이 `[system, general]` 인

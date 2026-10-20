@@ -140,6 +140,7 @@ python glossary/web/server.py
 3. **등록 (Register)**: 웹 UI나 CLI auto 모드를 통해 새 단어를 추가합니다.
 4. *(선택)* **복합어 등록 (Register compound)**: 특수한 조건에 해당하는 경우 복합어를 추가합니다.
 5. **생성 (Generate)**: 최종 사전을 갱신합니다.
+6. **올리기 (Publish)**: 먼저 다른 가지에 올립니다 -- `main` 은 `validate` 검사를 통과한 커밋만 받습니다 ([안내](doc/GIT_SUBMODULE_GUIDE.md#publishing-to-main-checked-first)).
 
 ---
 

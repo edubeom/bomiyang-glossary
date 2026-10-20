@@ -1,0 +1,46 @@
+name: glossary
+# Every push (any branch) and pull request is checked. The repository ruleset on main requires the
+# "validate" check below: a commit reaches main only after it passed on another branch first
+# (dev-process pushes to dev-process/incoming/<...>, waits for this check, then pushes the same commit to main).
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: glossary            # the code imports itself as the `glossary` package
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: dictionary rules (validate -- FATAL must be 0)
+        working-directory: glossary
+        run: python generate_glossary.py validate
+      - name: generated files match the dictionary (generate, timestamps ignored)
+        working-directory: glossary
+        run: |
+          python generate_glossary.py generate
+          python .github/scripts/check_generated.py
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: glossary
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: install test tools
+        run: python -m pip install --quiet pytest httpx
+      - name: glossary system tests
+        working-directory: glossary
+        run: python -m pytest -q test

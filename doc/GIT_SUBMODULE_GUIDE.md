@@ -68,6 +68,21 @@ python generate_glossary.py validate
 python generate_glossary.py generate
 ```
 
+### Publishing to `main` (checked first)
+
+`main` only accepts commits whose GitHub Actions check **`validate`** passed (repository ruleset: no force push,
+no deletion, no bypass). Push the commit to another branch first, wait for the check, then push the same commit to `main`:
+
+```bash
+git push origin HEAD:refs/heads/dev-process/incoming/<name>     # runs the check (validate + generated files up to date)
+# ... when the "validate" check of that commit is green:
+git push origin HEAD:main
+git push origin --delete dev-process/incoming/<name>
+```
+
+dev-process-framework's glossary commands do this for you (`glossary-publish`). A push straight to `main` is refused with
+`Required status check "validate" is expected`.
+
 ## 4. Normalization and Plural Forms
 
 You can access standalone utilities for text checking without instantiating the full dictionary:

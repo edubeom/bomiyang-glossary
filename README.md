@@ -144,6 +144,7 @@ python glossary/web/server.py
 3. **Register** new words (via Web UI or CLI auto mode).
 4. *(Optional)* **Register** compound terms for special cases.
 5. **Generate** the final glossary.
+6. **Publish**: push to a branch first -- `main` accepts only commits whose `validate` check passed ([guide](doc/GIT_SUBMODULE_GUIDE.md#publishing-to-main-checked-first)).
 
 ---
 
