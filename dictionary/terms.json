@@ -2,7 +2,7 @@
   "_WARNING": "이 파일은 자동 생성됩니다. 수동 편집 금지. words.json과 compounds.json을 편집하세요.",
   "version": "3.0.0",
   "generated": true,
-  "generated_at": "2026-10-19T10:53:55Z",
+  "generated_at": "2026-10-20T04:48:53Z",
   "terms": [
     {
       "id": "aborts",
@@ -4412,6 +4412,33 @@
       }
     },
     {
+      "id": "calendar",
+      "source": "word",
+      "root": "calendar",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "calendar",
+        "ko": "캘린더"
+      },
+      "description_i18n": {
+        "en": "A named collection of events, such as one Google Calendar; events belong to one calendar.",
+        "ko": "캘린더"
+      }
+    },
+    {
+      "id": "calendars",
+      "source": "word",
+      "root": "calendar",
+      "term_type": "variant",
+      "variant_type": "plural",
+      "domain": "general",
+      "lang": {
+        "en": "calendar",
+        "ko": "캘린더"
+      }
+    },
+    {
       "id": "call",
       "source": "word",
       "root": "call",
@@ -6268,6 +6295,65 @@
       "term_type": "variant",
       "variant_type": "gerund",
       "domain": "system",
+      "lang": {
+        "en": "color",
+        "ko": "색상",
+        "ja": "色",
+        "zh_hans": "颜色"
+      }
+    },
+    {
+      "id": "color",
+      "source": "word",
+      "root": "color",
+      "term_type": "base",
+      "domain": "general",
+      "lang": {
+        "en": "color",
+        "ko": "색상",
+        "ja": "色",
+        "zh_hans": "颜色"
+      },
+      "description_i18n": {
+        "ko": "시스템 UI의 상태나 로깅에서 심각도 등을 구분하기 위해 시각적으로 사용하는 색상 코드를 의미합니다.",
+        "en": "A setting for a color used in UI elements or reports."
+      }
+    },
+    {
+      "id": "colors",
+      "source": "word",
+      "root": "color",
+      "term_type": "variant",
+      "variant_type": "plural",
+      "domain": "general",
+      "lang": {
+        "en": "color",
+        "ko": "색상",
+        "ja": "色",
+        "zh_hans": "颜色"
+      }
+    },
+    {
+      "id": "colored",
+      "source": "word",
+      "root": "color",
+      "term_type": "variant",
+      "variant_type": "adj_form",
+      "domain": "general",
+      "lang": {
+        "en": "color",
+        "ko": "색상",
+        "ja": "色",
+        "zh_hans": "颜色"
+      }
+    },
+    {
+      "id": "coloring",
+      "source": "word",
+      "root": "color",
+      "term_type": "variant",
+      "variant_type": "gerund",
+      "domain": "general",
       "lang": {
         "en": "color",
         "ko": "색상",
@@ -12128,6 +12214,33 @@
       "lang": {
         "en": "escalator",
         "ko": "에스컬레이터"
+      }
+    },
+    {
+      "id": "etag",
+      "source": "word",
+      "root": "etag",
+      "term_type": "base",
+      "domain": "system",
+      "lang": {
+        "en": "etag",
+        "ko": "변경표시"
+      },
+      "description_i18n": {
+        "en": "Entity tag: an opaque version value an external API returns for a resource, used to detect changes and conflicts.",
+        "ko": "변경표시"
+      }
+    },
+    {
+      "id": "etags",
+      "source": "word",
+      "root": "etag",
+      "term_type": "variant",
+      "variant_type": "plural",
+      "domain": "system",
+      "lang": {
+        "en": "etag",
+        "ko": "변경표시"
       }
     },
     {
@@ -45440,5 +45553,5 @@
       }
     }
   ],
-  "checksum": "sha256:518a69cfeaa0c108ed9a1b5388b938dec9e9def0ea7dd9f5fab848a9e9093aa3"
+  "checksum": "sha256:6a0b1426f2304cc5d14e775bf42ef08a6d9b0768acfa42e45ce0d419ac7b736a"
 }
