@@ -1,4 +1,284 @@
 {
   "words": [],
-  "pending": []
+  "pending": [
+    {
+      "id": "access",
+      "lang": {
+        "en": "access"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "access@tests/test_auth.py",
+        "access@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.663876+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "aud",
+      "lang": {
+        "en": "aud"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "AUD@tests/test_auth.py",
+        "AUD@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664050+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "browser",
+      "lang": {
+        "en": "browser"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "browser@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664070+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "cdp",
+      "lang": {
+        "en": "cdp"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "cdp@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664082+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "connection",
+      "lang": {
+        "en": "connection"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "connection@app/auth/api.py",
+        "connection@app/auth/login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664092+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "database",
+      "lang": {
+        "en": "database"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "database_url@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664102+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "inside",
+      "lang": {
+        "en": "inside"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "inside@app/auth/api.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664112+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "issuer",
+      "lang": {
+        "en": "issuer"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "ISSUER@tests/test_auth.py",
+        "ISSUER@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664123+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "item",
+      "lang": {
+        "en": "item"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "item@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664133+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "kept",
+      "lang": {
+        "en": "kept"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "kept@app/auth/login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664143+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "lan",
+      "lang": {
+        "en": "lan"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "lan@tests/test_auth.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664152+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "letter",
+      "lang": {
+        "en": "letter"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "letter@app/auth/login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664161+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "other",
+      "lang": {
+        "en": "other"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "other@tests/test_auth.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664170+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "psql",
+      "lang": {
+        "en": "psql"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "psql@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664179+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "self",
+      "lang": {
+        "en": "self"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "self@app/auth/login.py",
+        "self@tests/test_auth.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664188+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "shot",
+      "lang": {
+        "en": "shot"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "shot@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664197+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "statement",
+      "lang": {
+        "en": "statement"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "statement@tests/test_auth.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664206+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "stranger",
+      "lang": {
+        "en": "stranger"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "stranger@tests/test_auth.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664215+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "team",
+      "lang": {
+        "en": "team"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "TEAM@tests/test_auth.py",
+        "TEAM@tools/e2e_login.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664224+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "way",
+      "lang": {
+        "en": "way"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "way@app/auth/api.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664234+09:00",
+      "requested_by": "dev-process glossary-sync"
+    },
+    {
+      "id": "where",
+      "lang": {
+        "en": "where"
+      },
+      "status": "needs_enrichment",
+      "variants": [],
+      "examples": [
+        "where@tests/test_auth.py"
+      ],
+      "requested_at": "2026-10-20T21:34:28.664243+09:00",
+      "requested_by": "dev-process glossary-sync"
+    }
+  ]
 }

@@ -2,7 +2,7 @@
   "_WARNING": "이 파일은 자동 생성됩니다. 수동 편집 금지. words.json과 compounds.json을 편집하세요.",
   "version": "3.0.0",
   "generated": true,
-  "generated_at": "2026-10-20T11:45:36Z",
+  "generated_at": "2026-10-20T12:34:28Z",
   "terms": [
     {
       "id": "aborts",
@@ -4956,6 +4956,33 @@
       }
     },
     {
+      "id": "challenge",
+      "source": "word",
+      "root": "challenge",
+      "term_type": "base",
+      "domain": "system",
+      "lang": {
+        "en": "challenge",
+        "ko": "챌린지"
+      },
+      "description_i18n": {
+        "en": "A random one-time value the server sends for the authenticator to sign, proving the response is fresh.",
+        "ko": "챌린지"
+      }
+    },
+    {
+      "id": "challenges",
+      "source": "word",
+      "root": "challenge",
+      "term_type": "variant",
+      "variant_type": "plural",
+      "domain": "system",
+      "lang": {
+        "en": "challenge",
+        "ko": "챌린지"
+      }
+    },
+    {
       "id": "change",
       "source": "word",
       "root": "change",
@@ -8231,6 +8258,33 @@
       "lang": {
         "en": "create",
         "ko": "생성"
+      }
+    },
+    {
+      "id": "credential",
+      "source": "word",
+      "root": "credential",
+      "term_type": "base",
+      "domain": "system",
+      "lang": {
+        "en": "credential",
+        "ko": "자격"
+      },
+      "description_i18n": {
+        "en": "Something that proves identity to a system; in WebAuthn, the public-key credential an authenticator creates.",
+        "ko": "자격"
+      }
+    },
+    {
+      "id": "credentials",
+      "source": "word",
+      "root": "credential",
+      "term_type": "variant",
+      "variant_type": "plural",
+      "domain": "system",
+      "lang": {
+        "en": "credential",
+        "ko": "자격"
       }
     },
     {
@@ -23089,6 +23143,33 @@
       "lang": {
         "en": "optimize",
         "ko": "최적화"
+      }
+    },
+    {
+      "id": "option",
+      "source": "word",
+      "root": "option",
+      "term_type": "base",
+      "domain": "system",
+      "lang": {
+        "en": "option",
+        "ko": "옵션"
+      },
+      "description_i18n": {
+        "en": "A setting passed to a call; in WebAuthn, the server's creation or request options for the browser.",
+        "ko": "옵션"
+      }
+    },
+    {
+      "id": "options",
+      "source": "word",
+      "root": "option",
+      "term_type": "variant",
+      "variant_type": "plural",
+      "domain": "system",
+      "lang": {
+        "en": "option",
+        "ko": "옵션"
       }
     },
     {
@@ -45580,5 +45661,5 @@
       }
     }
   ],
-  "checksum": "sha256:3335b3e15fce0fbed21cfc4538e705f4ff5f4c88059b54fbb9f9bb87708c985a"
+  "checksum": "sha256:1d9962a5dd4e39d23864293b98741886ba12125acaff550e254c2c313ea79edb"
 }

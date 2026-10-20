@@ -4697,6 +4697,30 @@
       "updated_at": "2026-04-19T03:22:27Z"
     },
     {
+      "id": "challenge",
+      "lang": {
+        "en": "challenge",
+        "ko": "챌린지"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "system"
+      ],
+      "status": "active",
+      "description_i18n": {
+        "en": "A random one-time value the server sends for the authenticator to sign, proving the response is fresh.",
+        "ko": "챌린지"
+      },
+      "variants": [
+        {
+          "type": "plural",
+          "value": "challenges"
+        }
+      ],
+      "updated_at": "2026-10-20T12:13:04Z",
+      "created_at": "2026-10-20T12:13:04Z"
+    },
+    {
       "id": "change",
       "lang": {
         "en": "change",
@@ -7388,6 +7412,30 @@
         ],
         "noted_at": "2026-10-05T02:14:38Z"
       }
+    },
+    {
+      "id": "credential",
+      "lang": {
+        "en": "credential",
+        "ko": "자격"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "system"
+      ],
+      "status": "active",
+      "description_i18n": {
+        "en": "Something that proves identity to a system; in WebAuthn, the public-key credential an authenticator creates.",
+        "ko": "자격"
+      },
+      "variants": [
+        {
+          "type": "plural",
+          "value": "credentials"
+        }
+      ],
+      "updated_at": "2026-10-20T12:13:07Z",
+      "created_at": "2026-10-20T12:13:07Z"
     },
     {
       "id": "credit",
@@ -21870,6 +21918,30 @@
       ],
       "created_at": "2026-04-19T03:22:27Z",
       "updated_at": "2026-04-19T03:22:27Z"
+    },
+    {
+      "id": "option",
+      "lang": {
+        "en": "option",
+        "ko": "옵션"
+      },
+      "canonical_pos": "noun",
+      "domain": [
+        "system"
+      ],
+      "status": "active",
+      "description_i18n": {
+        "en": "A setting passed to a call; in WebAuthn, the server's creation or request options for the browser.",
+        "ko": "옵션"
+      },
+      "variants": [
+        {
+          "type": "plural",
+          "value": "options"
+        }
+      ],
+      "updated_at": "2026-10-20T12:13:02Z",
+      "created_at": "2026-10-20T12:13:02Z"
     },
     {
       "id": "or",
