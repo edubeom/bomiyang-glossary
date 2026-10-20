@@ -9,7 +9,9 @@
 - main 보호 규칙 (저장소 ruleset `main -- validated only`, 소유자 지시 2026-10-20): 강제 push · 삭제 막기, 상태 검사 `validate`(GitHub Actions) 필수,
   예외(bypass) 없음. 그래서 **main 에는 다른 가지에서 `validate` 를 통과한 커밋만** 들어간다 -- 먼저 다른 가지(예: `dev-process/incoming/...`)에
   올리고 검사가 통과하면 같은 커밋을 main 으로 push 한다. dev-process-framework 의 사전 명령이 이 순서로 올린다.
-- File: .github/workflows/glossary.yml, .github/scripts/check_generated.py
+- 규칙 정본 `.github/rulesets/main-validated-only.json` -- 저장소 설정의 Rulesets 에서 가져오기(Import)로 적용한다
+  (이 세션의 GitHub 연결은 저장소 설정을 바꾸지 못한다 -- 소유자가 한 번 적용)
+- File: .github/workflows/glossary.yml, .github/scripts/check_generated.py, .github/rulesets/main-validated-only.json
 - File: doc/GIT_SUBMODULE_GUIDE.md, README.md, README.ko.md (올리는 순서)
 
 ### Verification

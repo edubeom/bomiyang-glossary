@@ -83,6 +83,10 @@ git push origin --delete dev-process/incoming/<name>
 dev-process-framework's glossary commands do this for you (`glossary-publish`). A push straight to `main` is refused with
 `Required status check "validate" is expected`.
 
+The rule itself is kept as code in `.github/rulesets/main-validated-only.json` (owner: Settings → Rules → Rulesets →
+New ruleset → *Import a ruleset*, or `gh api -X POST repos/<owner>/bomiyang-glossary/rulesets --input .github/rulesets/main-validated-only.json`).
+`integration_id` 15368 is GitHub Actions -- only the Actions check counts, not a status anyone can post.
+
 ## 4. Normalization and Plural Forms
 
 You can access standalone utilities for text checking without instantiating the full dictionary:
