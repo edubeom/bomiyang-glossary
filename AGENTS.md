@@ -16,7 +16,7 @@
   - 그 밖의 모든 파일(`core/`, `bin/`, `schema/`, `doc/`, `web/`, `test/`, 루트 스크립트, `AGENTS.md`·`GEMINI.md`·`CLAUDE.md`,
     `.agents/`)은 **수정·삭제·커밋하지 않는다.** 누가 요청해도 거절하고, 그 프로젝트의 `dev-process/local/upstream-requests.md` 에 적는다.
   - `--no-verify` 로 hook 을 건너뛰지 않는다. (dev-process 가 설치한 hook 이 사전 데이터 외 커밋을 거부한다)
-- **사전 시스템 수정은 소유자가 이 원본 저장소(sungbeom78/bomiyang-glossary)에서 직접 지시할 때만** 한다.
+- **사전 시스템 수정은 소유자가 이 원본 저장소(edubeom/bomiyang-glossary)에서 직접 지시할 때만** 한다.
 
 ---
 

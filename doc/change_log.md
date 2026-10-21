@@ -1,5 +1,9 @@
 # Glossary Change Log
 
+## [2026-10-21 12:50:00]
+### Changed
+- 저장소 소유자 이전 (소유자 지시): `sungbeom78/bomiyang-glossary` → `edubeom/bomiyang-glossary`. 안내 문서(AGENTS.md · GEMINI.md)의 주소만 바꿈, 코드 · 사전 데이터 변경 없음
+
 ## [2026-10-20 21:40:00]
 ### Added
 - GitHub Actions `glossary` (`.github/workflows/glossary.yml`): 모든 push · PR 에서

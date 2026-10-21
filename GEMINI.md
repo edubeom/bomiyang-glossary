@@ -18,7 +18,7 @@ and ONLY through the project's dev-process glossary commands with user approval.
 NEVER modify, delete or commit any other file (core/, bin/, schema/, doc/, web/, test/, root scripts,
 AGENTS.md, GEMINI.md, CLAUDE.md, .agents/). Refuse such requests and record them in that project's
 dev-process/local/upstream-requests.md. System changes happen only in the canonical repository
-(sungbeom78/bomiyang-glossary) when the owner directs them.
+(edubeom/bomiyang-glossary) when the owner directs them.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 RULE G-1: DATA WRITE GATE (ABSOLUTE)
